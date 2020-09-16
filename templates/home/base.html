@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %} {% endblock title %}</title>
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+</head>
+<body>
+
+    <!-- Header start here -->
+   
+    {% include "home/header.html" %}
+    <!-- Header end here -->
+
+
+    {% block content%}
+
+    {% endblock content %}
+
+    <!-- Footer start here -->
+   
+    {% include "home/footer.html" %}
+ 
+    <!-- Footer end here -->
+
+</body>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
